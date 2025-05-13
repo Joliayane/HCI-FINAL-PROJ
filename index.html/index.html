@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+    <!-- Favicon can be added here if you have one -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <title>STARCOFFEE - Responsive Coffee Website</title>
+
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 100;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rDosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 200;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rCosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 300;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA7wTCosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rCosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 500;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 600;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA74TFosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 700;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA773Fosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 800;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rFosg.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Saira';
+            font-style: normal;
+            font-weight: 900;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/saira/v21/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA7_PFosg.ttf) format('truetype');
+        }
+
+        :root {
+            --header-height: 3.5rem;
+
+            --first-color: hsl(166, 80%, 40%);
+            --first-color-alt: hsl(166, 78%, 38%);
+            --title-color: hsl(166, 95%, 15%);
+            --text-color: hsl(166, 20%, 85%); 
+            --text-color-light: hsl(166, 12%, 60%);
+            --white-color: hsl(0, 0%, 100%);
+            --dark-color: hsl(166, 95%, 8%); 
+            --body-color: hsl(166, 60%, 10%);
+            --container-color: hsl(166, 50%, 15%); 
+            
+
+            --body-font: "Montserrat", sans-serif;
+            --second-font: "Saira", sans-serif;
+            --biggest-font-size: 2.75rem;
+            --h1-font-size: 2rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .75rem;
+
+            --font-regular: 400;
+            --font-medium: 500;
+            --font-semi-bold: 600;
+            --font-bold: 700;
+
+            --z-tooltip: 10;
+            --z-fixed: 100;
+            --z-modal: 1000;
+        }
+       
+        @media screen and (min-width: 1150px) {
+            :root {
+                --biggest-font-size: 5rem;
+                --h1-font-size: 2.5rem;
+                --h2-font-size: 1.75rem;
+                --h3-font-size: 1.5rem;
+                --normal-font-size: 1.125rem;
+                --small-font-size: .938rem;
+                --smaller-font-size: .813rem;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--white-color);
+            font-family: var(--second-font);
+            font-weight: var(--font-semi-bold);
+            line-height: 1.2;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--first-color);
+        }
+        a:hover {
+            color: burlywood;
+        }
+
+        img, svg { 
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        input,
+        button {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            outline: none;
+            border: none;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin-inline: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .section {
+            padding-block: 5rem 2rem;
+        }
+
+        .section__title {
+            font-size: var(--h1-font-size);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: burlywood;
+            background: rgba(65, 25, 0,0.9); /* existing */
+             padding: 2rem;                      /* add space inside */
+            border-radius: 1rem;                /* round the corners */
+            max-width: 600px;                   /* optional: control width */
+            margin: 0 auto;  
+            margin-bottom: 2rem;
+        }
+        .section__title br {
+            display: none; 
+        }
+
+        .main {
+            overflow: hidden; 
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            z-index: var(--z-fixed);
+            transition: background-color .3s, box-shadow .3s;
+        }
+
+        .nav {
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav__logo {
+            font-family: var(--second-font);
+            font-size: var(--h2-font-size);
+            font-weight: var(--font-bold);
+            color: var(--white-color);
+        }
+        .nav__logo i {
+            color: var(--first-color);
+        }
+
+        .nav__toggle,
+        .nav__close {
+            display: flex;
+            font-size: 1.5rem;
+            color: var(--white-color);
+            cursor: pointer;
+        }
+
+        body {
+  margin: 0;
+  background-image: url("vin.jpg");
+ 
+ 
+}
+
+.gallery-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(88, 88, 84, 0.5);
+ 
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row; /* buttons next to gallery */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+
+#back, #next {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  width: 900px;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.gallery img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 10px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: burlywood;
+  background: rgba(65, 25, 0); /* existing */
+    padding: 2rem;                      /* add space inside */
+    border-radius: 1rem;                /* round the corners */
+    max-width: 600px;                   /* optional: control width */
+    margin: 0 auto;  
+     margin-bottom: 5rem;
+}
+
+
+        @media screen and (max-width: 1023px) {
+            .nav__menu {
+                position: fixed;
+                top: -100%; 
+                left: 0;
+                background-color: hsla(166, 60%, 8%, .9);
+                width: 100%;
+                padding-block: 4.5rem 4rem;
+                backdrop-filter: blur(8px);
+                transition: top .4s;
+                text-align: center;
+            }
+        }
+
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5rem;
+        }
+
+        .nav__link {
+            color: var(--white-color);
+            font-family: var(--second-font);
+            font-weight: var(--font-medium);
+            transition: color .3s;
+        }
+        .nav__link:hover,
+        .nav__link.active-link {
+            color: rgb(80, 21, 21);
+        }
+
+        .nav__close {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+        }
+
+        .show-menu {
+            top: 0;
+        }
+        
+        .header-bg {
+            background-color: rgb(137, 31, 31);
+            box-shadow: 0 2px 8px hsla(166, 50%, 5%, .5);
+        }
+
+
+        .home {
+            position: relative;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding-top: var(--header-height);
+        }
+        .home__container {
+            padding-top: 2rem;
+            text-align: center;
+        }
+        .home__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+            opacity: 0.3; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        radial-gradient(circle, brown 0%, beige 70%);
+        }
+
+        .home__title {
+            font-size: var(--biggest-font-size);
+            color: var(--white-color);
+            margin-bottom: 1rem;
+            font-weight: var(--font-bold);
+        }
+
+        .home__description {
+            font-size: var(--h3-font-size);
+            color: var(--white-color);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+        .images{
+            position: absolute;
+            display:grid;
+            justify-items: center;
+            justify-self: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: brown;
+            color: var(--white-color);
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            font-weight: var(--font-medium);
+            transition: background-color .3s, transform .3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .button:hover {
+            background-color: rgb(97, 24, 24);
+            transform: translateY(-2px);
+        }
+        .button i {
+            margin-left: .5rem;
+        }
+
+        .popular__container {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .popular__card {
+            background-color: rgb(129, 32, 32,0.9);
+            padding: 2rem 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: transform .3s, box-shadow .3s;
+        }
+        .popular__card:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 0 8px 16px hsla(19, 100%, 29%, 0.2);
+        }
+        .popular__img-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: var(--first-color-alt);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white-color);
+        }
+        .popular__name {
+            font-size: var(--h2-font-size);
+            color: var(--white-color);
+            margin-bottom: .5rem;
+        }
+        .popular__description {
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+            margin-bottom: 1rem;
+            min-height: 3.5em;
+        }
+        .popular__price {
+            font-size: var(--h3-font-size);
+            color: white;
+            font-weight: var(--font-semi-bold);
+            margin-bottom: 1rem;
+        }
+
+       .about__container {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  background-color: rgba(133, 78, 44);
+  border-radius: 1rem; 
+}
+        .about__data {
+    text-align: center;
+    padding: 2rem;                      /* add space inside */
+    border-radius: 1rem;                /* round the corners */
+    max-width: 600px;                   /* optional: control width */
+    margin: 0 auto;  
+     margin-bottom: 5rem;                   /* center it */
+}
+
+        
+        .about__description {
+            margin-bottom: .5rem;
+            line-height: 1.6;
+            
+        }
+        .about__img{ 
+            width: 100%;
+            max-width: 400px;
+            height: 450px;
+            background-color: rgb(133, 32, 32);
+            border-radius: 1rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--first-color);
+        }
+
+        .products-section{
+            background-image: url(bg1.jpg);
+        }
+        .products__container {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .products__card {
+            background-color: rgba(255, 214, 160, 0.9);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-bottom:2.5rem;
+        }
+        .products__img-placeholder { 
+            width: 120px;
+            height: 120px;
+            background-color: var(--first-color-alt);
+            border-radius: .5rem;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--white-color);
+        }
+        .products__name {
+            font-size: var(--h3-font-size);
+            color: var(--white-color);
+            margin-bottom: .25rem;
+        }
+        .products__price {
+            font-size: var(--normal-font-size);
+            color: brown ;
+            font-weight: var(--font-semi-bold);
+        }
+       
+        .contact-section{
+             background-color: rgb(76, 73, 73,0.7);
+        }
+        
+          .contact__container {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            
+
+        }
+        .contact__content {
+            display: grid;
+            gap: 2rem;
+        }
+        .contact__card {
+            background-color: rgb(144, 90, 45);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+        .contact__card-title {
+            font-size: var(--h3-font-size);
+            color: rgb(86, 22, 22);
+            margin-bottom: 1rem;
+        }
+        .contact__card-data {
+            display: grid;
+            row-gap: .75rem;
+        }
+        .contact__card-data p,
+        .contact__card-data a {
+            font-size: var(--normal-font-size);
+            color: var(--text-color);
+        }
+        .contact__card-data a:hover {
+            color: rgb(141, 36, 36);
+        }
+        .contact__card-data i {
+            margin-right: .5rem;
+            color: blanchedalmond;
+        }
+
+        .footer {
+            padding-block: 4rem 2rem;
+            background-color: rgb(108, 24, 24);
+        }
+        .footer__container {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            row-gap: 3rem;
+        }
+        .footer__title {
+            font-size: var(--h3-font-size);
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+        .footer__links, .footer__social {
+            display: flex;
+            flex-direction: column;
+            row-gap: .75rem;
+        }
+        .footer__link, .footer__social-link {
+            color: beige;
+            transition: color .3s;
+        }
+        .footer__link:hover, .footer__social-link:hover {
+            color: rgb(133, 33, 33);
+        }
+        .footer__social-link i {
+            font-size: 1.5rem;
+        }
+        .footer__form {
+            display: grid;
+            gap: .5rem;
+        }
+        .footer__input {
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            background-color: rgb(250, 218, 188);
+            color: var(--white-color);
+            border: 1px solid beige;
+        }
+        .footer__input::placeholder {
+            color: black;
+        }
+        .footer__button {
+            background-color: rgb(156, 40, 40);
+            color: var(--white-color);
+            padding: .75rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition: background-color .3s;
+        }
+        .footer__button:hover {
+            background-color:  rgb(102, 27, 27);
+        }
+        .footer__copy {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+        }
+        .footer__payment-methods img {
+            height: 24px;
+            margin-right: .5rem;
+            opacity: 0.7;
+        }
+
+        ::-webkit-scrollbar {
+            width: .6rem;
+            background-color: hsl(29, 100%, 18%);
+            border-radius: .5rem;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: hsl(34, 50%, 30%);
+            border-radius: .5rem;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: hsl(32, 80%, 40%);
+        }
+        
+        
+
+        .gallery img {
+             width: 220px;
+             height: 300px;
+        }
+
+        @media screen and (max-width: 320px) {
+            .container {
+                margin-inline: 1rem;
+            }
+            .home__title {
+                font-size: 2.25rem;
+            }
+            .home__description {
+                font-size: var(--h3-font-size);
+            }
+            .section__title {
+                font-size: var(--h2-font-size);
+            }
+            
+        }
+        
+            .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+            .products__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: rgba(133, 78, 44, 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.products__item {
+    cursor: pointer;
+    padding: 0 1rem;
+    position: relative;
+}
+
+/* Add vertical divider between items */
+.products__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: -1rem;
+    width: 1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.4); /* light divider */
+}
+
+       
+        .products__title{
+            font-size: 2rem;
+            color: black;
+            margin-bottom: .5rem;
+           
+        }
+        .products__stock{
+            font-size: 1rem;  
+            color:burlywood;
+        }   
+            
+        
+        @media screen and (min-width: 768px) {
+            .section__title br { 
+                display: block;
+                
+            }
+            .about__container {
+        grid-template-columns: 1fr 1fr; /* text | image */
+    }
+
+    .about__data {
+        text-align: left;
+    }
+}
+            .contact__container {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: flex-start;
+            }
+            .products__filters{
+                grid-template-columns: repeat(3,200px);
+            }
+           .gallery-section {
+    padding: 3rem 2rem;
+  }
+
+  .gallery-wrap {
+    flex-direction: row;
+  }
+
+  .gallery {
+    max-width: 80vw;
+    gap: 1.5rem;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 260px;
+  }
+
+  #back, #next {
+    width: 70px;
+    height: 70px;
+  }
+
+
+        @media screen and (max-width: 480px) {
+  .gallery img {
+    width: 150px;
+    height: 200px;
+  }
+
+  #back, #next {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+        @media screen and (min-width: 1024px) {
+            
+            .nav__menu {
+                position: static;
+                width: auto;
+                background-color: transparent;
+                padding-block: 0;
+                backdrop-filter: none;
+            }
+            .nav__list {
+                flex-direction: row;
+                column-gap: 3rem;
+            }
+            .nav__toggle,
+            .nav__close {
+                display: none;
+            }
+            .header-height {
+                height: calc(var(--header-height) + 1.5rem);
+            }
+            .section {
+                padding-block: 7rem 4rem;
+            }
+            .home__container {
+                padding-top: 4rem;
+            }
+            .popular__container {
+                gap: 2.5rem;
+            }
+            .products__container {
+                gap: 2.5rem;
+            }
+            .contact__content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .gallery-section {
+    padding: 4rem 3rem;
+  }
+
+  .gallery-title {
+    font-size: 2.5rem;
+  }
+
+  .gallery {
+    max-width: 70vw;
+    gap: 2rem;
+  }
+
+  .gallery img {
+    width: 250px;
+    height: 320px;
+  }
+
+        @media screen and (min-width: 1040px){
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .products__filters{
+                margin: 4rem 0 5.5rem;
+                column-gap: 4rem;
+            }
+        }
+        @media screen and (min-width: 1150px) {
+            .container {
+                margin-inline: auto;
+            }
+             .gallery {
+                 width: 80vw;
+             }
+
+            .gallery img {
+                width: 280px;
+                height: 360px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-cafe-line"></i> TIMELESS TINTS
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">ABOUT US</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">PRODUCTS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">NEW</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">GALLERY</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">CONTACT</a>
+                    </li>
+                </ul>
+
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__bg">
+                
+            </div> <!-- For background image/gradient -->
+            <div class="images">
+              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.92/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/gAVsJ8LUjVqBiRIg/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="home__container container">
+                <div class="home__data">
+                    <h1 class="home__title">ARTSY COFFEE</h1>
+                    <p class="home__description">
+                        Find delicious coffees, desserts, and food 
+                        with the best varieties, enjoy the arts, and enjoy 
+                        a good retro vibe, visit now.
+                    </p>
+                    <a href="#about" class="button">Learn More <i class="ri-arrow-right-s-line"></i></a>
+                </div>
+            </div>
+        </section>
+
+          <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">LEARN MORE <br> ABOUT US</h2>
+                    <p class="about__description">
+                        Welcome to Timeless Tints, where retro and arts combine.
+                        From arts to cup, we are dedicated to delivering 
+                        creativity in every sip. Join us on a journey of 
+                        flavor and quality, crafted with love to create the 
+                        ultimate coffee experience.
+                    </p>
+                    <a href="#products" class="button">The Best Coffees <i class="ri-arrow-right-s-line"></i></a>
+                </div>
+                <div class="about__img">
+                    <div class="about-shape"></div>
+                    <img src="h.png" class="cof">
+                </div>
+            </div>
+        </section>
+        
+
+      
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products-section" id="products">
+       
+            <h2 class="section__title">OUR <br> DELICACIES</h2>
+            
+            <ul class ="products__filters">
+                <li class="products__item products__line" data-filter=".drinks">
+                    <h3 class="products__title">Drinks</h3>
+                    <span class="products__stock">8 products</span>
+                </li>
+                <li class="products__item products__line" data-filter=".food">
+                    <h3 class="products__title">Food</h3>
+                    <span class="products__stock">8 products</span>
+                </li>
+                <li class="products__item products__line" data-filter=".dessert">
+                    <h3 class="products__title">Desserts</h3>
+                    <span class="products__stock">8 products</span>
+                </li>
+            </ul>
+            <!--==================== drinks ====================-->
+            
+                 <div class="products__container container grid">
+                <article class="products__card drinks">
+                    <img src="capuccino.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CAPPUCINO</h3>
+                    <span class="products__price">₱125.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                    <img src="latte.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">LATTE</h3>
+                    <span class="products__price">₱120.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                    <img src="espresso.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">ESPRESSO</h3>
+                    <span class="products__price">₱79.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                   <img src="americano.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">AMERICANO</h3>
+                    <span class="products__price">₱95.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                    <img src="cold brew.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">COLD BREW</h3>
+                    <span class="products__price">₱88.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                   <img src="iced coffee.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">ICED COFFEE</h3>
+                    <span class="products__price">₱150.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                   <img src="hot choco.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">HOT CHOCOLATE</h3>
+                    <span class="products__price">₱165.00</span>
+                </article>
+
+                <article class="products__card drinks">
+                   <img src="frapuccino.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">FRAPUCCINO</h3>
+                    <span class="products__price">₱175.00</span>
+                </article>
+                <!--==================== food ====================-->
+                <article class="products__card food">
+                    <img src="burd.png" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">BURGER</h3>
+                    <span class="products__price">₱149.00</span>
+                </article>
+
+                <article class="products__card food">
+                    <img src="corn.png" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">BACSILOG</h3>
+                    <span class="products__price">₱135.00</span>
+                </article>
+
+                <article class="products__card food">
+                    <img src="pan.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">PANCAKES</h3>
+                    <span class="products__price">₱159.00</span>
+                </article>
+
+                <article class="products__card food">
+                   <img src="sand.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">SANDWICH</h3>
+                    <span class="products__price">₱115.00</span>
+                </article>
+
+                <article class="products__card food">
+                    <img src="spag.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">SPAGHETTI</h3>
+                    <span class="products__price">₱100.00</span>
+                </article>
+
+                <article class="products__card food">
+                   <img src="waffle.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">WAFFLE</h3>
+                    <span class="products__price">₱60.00</span>
+                </article>
+
+                <article class="products__card food">
+                   <img src="carb.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CARBONARA</h3>
+                    <span class="products__price">₱90.00</span>
+                </article>
+
+                <article class="products__card food">
+                   <img src="salad.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">SALAD</h3>
+                    <span class="products__price">₱85.00</span>
+                </article>
+                <!--==================== desserts ====================-->
+                <article class="products__card dessert">
+                    <img src="cinna.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CINNAMON ROLL</h3>
+                    <span class="products__price">₱50.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                    <img src="cupca.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CUPCAKE</h3>
+                    <span class="products__price">₱30.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                    <img src="cookie.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">COOKIE</h3>
+                    <span class="products__price">₱45.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                   <img src="donut.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">DONUTS</h3>
+                    <span class="products__price">₱250.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                    <img src="cheesecake.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CHEESECAKE</h3>
+                    <span class="products__price">₱115.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                   <img src="croissant.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CROISSANT</h3>
+                    <span class="products__price">₱85.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                   <img src="churros.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CHURROS</h3>
+                    <span class="products__price">₱60.00</span>
+                </article>
+
+                <article class="products__card dessert">
+                   <img src="cake.jpg" alt="image" class="products__img-placeholder">
+                    <h3 class="products__name">CAKE</h3>
+                    <span class="products__price">₱89.00</span>
+                </article>
+            </div>
+         </div>
+            
+        </section>
+<!--==================== POPULAR ====================-->
+        <section class="popular section" id="new">
+            <h2 class="section__title">Just In!</h2>
+
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <div class="popular__img-placeholder"><img src="macha.jpg"></div>
+                    <h3 class="popular__name">MATCHA LATTE</h3>
+                    <p class="popular__description">Indulge in creamy, vibrant green tea-based beverage</p>
+                    <span class="popular__price">₱150.00</span>
+                    <button class="button">Order Now</button>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__img-placeholder"><img src="crepe.jpg"></div>
+                    <h3 class="popular__name">CREPE CAKE</h3>
+                    <p class="popular__description">Enjoy a cake made from layers of cream and thin crepes stacked to form a tall cake.</p>
+                    <span class="popular__price">₱95.00</span>
+                    <button class="button">Order Now</button>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__img-placeholder"><img src="mocha.jpg"></div>
+                    <h3 class="popular__name">MOCHA COFFEE</h3>
+                    <p class="popular__description">A delightful blend of rich espresso, chocolate, and steamed milk.</p>
+                    <span class="popular__price">₱55.00</span>
+                    <button class="button">Order Now</button>
+                </article>
+            </div>
+        </section>
+
+     <section class="gallery-section" id="gallery">
+    <h2 class="gallery-title">Image Gallery</h2>
+    <div class="gallery-wrap">
+    <img src="back.png" id="back" alt="Back">
+    <div class="gallery" id="gallery-scroll">
+      <img src="pic.jpg" alt="1">
+      <img src="pic1.jpg" alt="2">
+      <img src="pic2.jpg" alt="3">
+      <img src="pic3.jpg" alt="4">
+      <img src="pic4.jpg" alt="5">
+      <img src="pic5.jpg" alt="6">
+    </div>
+    <img src="next.png" id="next" alt="Next">
+  </div>
+</section>
+
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact-section" id="contact">
+            <h2 class="section__title">CONTACT US</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__card">
+                        <h3 class="contact__card-title">Write Us</h3>
+                        <div class="contact__card-data">
+                            <p><i class="ri-whatsapp-line"></i> <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank">WhatsApp</a></p>
+                            <p><i class="ri-messenger-line"></i> <a href="https://m.me/bedimcode" target="_blank">Messenger</a></p>
+                            <p><i class="ri-telegram-line"></i> <a href="https://t.me/telegram" target="_blank">Telegram</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <h3 class="contact__card-title">Location</h3>
+                        <div class="contact__card-data">
+                            <p><i class="ri-map-pin-line"></i> Gingo St. <br> Davao City</p>
+                            <p><a href="https://www.google.com.pe/maps/place/Gaisano+Mall+of+Davao/@7.0779988,125.6110776,17z/data=!3m1!4b1!4m6!3m5!1s0x32f96da196206f5f:0x59abacbdd0320e1c!8m2!3d7.0779935!4d125.6136525!16s%2Fm%2F0yntt5v?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">View On Map <i class="ri-external-link-line"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                     <div class="contact__card">
+                        <h3 class="contact__card-title">Delivery</h3>
+                        <div class="contact__card-data">
+                            <p><i class="ri-phone-line"></i> +00-123-456-789</p>
+                            <p><i class="ri-phone-line"></i> +08-012345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <h3 class="contact__card-title">Attention</h3>
+                        <div class="contact__card-data">
+                            <p><i class="ri-calendar-event-line"></i> Monday - Saturday</p>
+                            <p><i class="ri-time-line"></i> 9AM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <h3 class="footer__title">Timeless Tints</h3>
+                <p class="footer__description">
+                   Your local artistic cafe <br> that takes you back everytime.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#products" class="footer__link">Our Products</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li><a href="#contact" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"><i class="ri-facebook-circle-fill"></i> Facebook</a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"><i class="ri-instagram-fill"></i> Instagram</a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link"><i class="ri-twitter-x-fill"></i> Twitter</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Subscribe For Discounts</h3>
+                <form action="" class="footer__form">
+                    <input type="email" name="email" placeholder="Enter your email" class="footer__input">
+                    <button type="submit" class="button footer__button">Subscribe</button>
+                </form>
+                <div style="margin-top: 1rem;">
+                    <h3 class="footer__title" style="font-size: var(--normal-font-size); margin-bottom: .5rem;">Payment Methods</h3>
+                    <!-- Simple text or could be SVGs for payment icons -->
+                    <p style="color: var(--text-color-light); font-size: var(--small-font-size);">We accept all major credit cards and digital payments.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; All Rights Reserved</p>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <style>
+    .scrollup{
+        position: fixed;
+        right: 1rem;
+        bottom: -50%;
+        background-color: rgb(190, 46, 46);
+        padding: .6rem .8rem;
+        border-radius: .4rem;
+        z-index: var(--z-tooltip);
+        transition: bottom .4s, transform .4s;
+        opacity: .9;
+    }
+    .scrollup:hover{
+        transform: translateY(-.25rem);
+        opacity: 1;
+    }
+    .scrollup__icon{
+        font-size: 1.25rem;
+        color: beige;
+    }
+    .show-scroll{
+        bottom: 3rem;
+    }
+    </style>
+    <script>
+        const scrollUp = () =>{
+            const scrollUp = document.getElementById('scroll-up')
+           
+            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                : scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+              navToggle = document.getElementById('nav-toggle'),
+              navClose = document.getElementById('nav-close');
+
+        if(navToggle){
+            navToggle.addEventListener('click', () =>{
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if(navClose){
+            navClose.addEventListener('click', () =>{
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        const linkAction = () =>{
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.remove('show-menu');
+        }
+        navLinks.forEach(n => n.addEventListener('click', linkAction));
+
+        const scrollHeader = () =>{
+            const header = document.getElementById('header');
+            this.scrollY >= 50 ? header.classList.add('header-bg') 
+                               : header.classList.remove('header-bg');
+        }
+        window.addEventListener('scroll', scrollHeader);
+        
+        const sections = document.querySelectorAll('section[id]')
+            
+        const scrollActive = () =>{
+            const scrollY = window.pageYOffset
+
+            sections.forEach(current =>{
+                const sectionHeight = current.offsetHeight,
+                        sectionTop = current.offsetTop - 58,
+                        sectionId = current.getAttribute('id'),
+                        sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    sectionsClass.classList.add('active-link')
+                }else{
+                    sectionsClass.classList.remove('active-link')
+                }                                                    
+            })
+        }
+        window.addEventListener('scroll', scrollActive)
+
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 300,
+        });
+
+        sr.reveal(`.home__data, .footer__container`);
+        sr.reveal(`.home__title`, {delay: 200, origin: 'bottom', distance: '50px'}); // As per user request
+        sr.reveal(`.home__description`, {delay: 400, origin: 'bottom'});
+        sr.reveal(`.button`, {delay: 600, origin: 'bottom', interval: 100});
+        sr.reveal(`.popular__card`, {interval: 200});
+        sr.reveal(`.about__data`, {origin: 'left'});
+        sr.reveal(`.about__img-placeholder`, {origin: 'right'});
+        sr.reveal(`.products__card`, {interval: 150});
+        sr.reveal(`.contact__card`, {interval: 150, origin: 'bottom'});
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js">
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      mixitup('.products__container', {
+        selectors: {
+           target: '.products__card'
+      },
+      animation: {
+        duration: 300
+      },
+      load: {
+        filter: '.drinks'
+      }
+    });
+  });
+</script>
+<script>
+  const gallery = document.getElementById("gallery-scroll");
+  const next = document.getElementById("next");
+  const back = document.getElementById("back");
+
+  const scrollAmount = 320; // adjust as needed
+
+  next.addEventListener("click", () => {
+    gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  back.addEventListener("click", () => {
+    gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+</script>
+
+   
+    
+    <script src="main.js"></script>
+</body>
+</html>
